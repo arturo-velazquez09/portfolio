@@ -1,0 +1,215 @@
+<!doctype html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<style>
+		body{
+			margin: 50px 5% 0 5%;
+			font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+			position: relative;
+			height: 100%;
+
+		}
+		
+		.wrap{
+			min-height:100%;
+       		width:100%;
+        	position:relative;
+        	display:inline-block;
+			
+		}
+		
+		.column1{
+			width: 20%;
+			min-height: 100%;
+			top: 0px;
+			bottom: 0px;
+			left: 0px;
+			text-align: right;
+			position: absolute;
+		}
+		
+		a:link{
+			text-decoration: none;
+			color: black;
+		}
+		
+		a:visited{
+			color: black;
+		}
+		
+		h1{
+			font-size: 32px;
+			font-weight: normal;
+			margin-bottom: -10px;
+		}
+		
+		h2{
+			font-size: 20px;
+			font-weight: normal;
+			
+		}
+		
+		.show{
+			display: block;
+		}
+				
+		ul{
+			list-style-type: none;
+			list-style: none;
+			display: none;
+			margin-top: 0px;
+			margin-left: -150px;
+		}
+		
+		li{
+			line-height: 40px;
+			height: 40px;
+			padding-right: 7.5px;
+		}
+		
+		li:hover{
+			transform: translateX(-1px) translateY(-2px);
+			transition-duration: .15s;
+		}
+		
+		span{
+			display: block;
+			font-size: 24px;
+			line-height: 50px;
+			z-index: 2;
+		}
+		
+		span:hover{
+			transform: translateX(-1px) translateY(-2px);
+			transition-duration: .15s;
+			cursor: pointer;
+		}
+		
+		.content{
+			width: 60%;
+			margin-left: 32.5%;
+			margin-top: 6%;
+			display: inline-block;
+			
+		}
+		
+		img{
+			height: 550px;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		
+		.Hello{
+			font-size: 300px;
+			margin-top: 100px;
+			margin-bottom: 110px;
+		}
+		.caption{
+			margin-top: 10px;
+		}
+		
+		
+
+@media only screen and (min-width: 1600px) and (max-width: 3000px){
+	
+	h1{
+		font-size: 48px;
+	}
+	
+	h2{
+		font-size: 28px;
+	}
+	
+	span{
+		font-size: 28px;
+	}
+	
+	li{
+		font-size: 20px;
+		line-height: 50px;
+		height: 50px;
+	}
+	
+	img{
+		height: 700px;
+	}
+	
+	.caption{
+		font-size: 24px;
+	}
+	
+}
+	</style>
+<meta charset="UTF-8">
+<title>Arturo Velazquez</title>
+</head>
+
+<body>
+	
+	<div class="wrap">
+	<div class="column1">
+		<div class="header">
+			<h1><a href="index.html">Arturo Velazquez</a></h1>
+			<h2>Photography and Design</h2>	
+			
+		</div>
+		
+		<div id="slide" class="dropdown">
+			<span id="toggle">Photography</span>
+				<ul id="dropdown">
+					<a href="portraits.html"><li>Portraits</li></a>
+					<a href="chicago.html"><li>Chicago</li></a>
+					<a href="thelittlethings.html"><li>The Little Things</li></a>
+			
+				</ul>
+		</div>
+		
+		<div id="slide2" class="dropdown">
+			<span id="toggle2">Design</span>
+				<ul id="dropdown2">
+					<a href="typography2.html"><li>Typography Exercises</li></a>
+					<a href="icon.html"><li>Iconography Exercises</li></a>
+					<a href="principles.html"><li>Principles of Design Webpage</li></a>
+					<a href="nationalparks.html"><li>National Parks Webpage</li></a>
+			
+				</ul>	
+		</div>
+	</div>	
+	</div>	
+	<div class="content">
+		<div class="image">
+			<!--img src="images/" alt=''-->
+			<div class="Hello">Hello.</div>
+			<div class="caption">My name is Arturo Velazquez. I am a graphic design student at University of Illinois at Chicago with a minor in art, graduating May 2021. I enjoy designing webpages and am proficient in HTML and CSS, with slight experience in JavaScript. I also enjoy practicing photography through digital and analog formats. Look through my work on the left side of the page. I am currently a seeking an internship related to graphic design for summer 2020. </div>
+		</div>
+	
+	</div>
+	
+<script>
+$('#toggle').click(function () {
+    $('#dropdown').slideToggle();
+    $('#slide').toggleClass('open');
+});
+
+$('#dropdown > li').click(function () {
+    $('#dropdown').slideUp();
+    $('#slide').removeClass('open');
+});
+	
+	
+$('#toggle2').click(function () {
+    $('#dropdown2').slideToggle();
+    $('#slide2').toggleClass('open');
+});
+
+$('#dropdown2 > li').click(function () {
+    $('#dropdown2').slideUp();
+    $('#slide2').removeClass('open');
+});
+
+</script>
+</body>	
+
+</html>
