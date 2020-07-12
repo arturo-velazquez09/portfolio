@@ -2,9 +2,9 @@
 <html>
 <head>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<style>
+<style>
 		body{
-			margin: 50px 5% 0 5%;
+			margin: 2.5% 5% 0 5%;
 			font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
 			position: relative;
 			height: 100%;
@@ -20,7 +20,7 @@
 		}
 		
 		.column1{
-			width: 20%;
+			width: 27%;
 			min-height: 100%;
 			top: 0px;
 			bottom: 0px;
@@ -89,8 +89,7 @@
 		.content{
 			width: 60%;
 			margin-left: 32.5%;
-			margin-top: 6%;
-			position: relative;
+			margin-top: 0%;
 			display: inline-block;
 			
 		}
@@ -103,7 +102,7 @@
 		}
 		
 		.caption{
-			margin-top: 10px;	
+			margin-top: 20px;
 		}
 		
 		.slides{
@@ -135,34 +134,31 @@
 			to{opacity 1}
 		}
 		
-		.spread{
-			border-style: solid;
-			border-width: 1px;
-			border-color: black;
-		}
+		
+		
 
 @media only screen and (min-width: 1600px) and (max-width: 3000px){
 	
 	h1{
-		font-size: 48px;
+		font-size: 56px;
 	}
 	
 	h2{
-		font-size: 28px;
+		font-size: 32px;
 	}
 	
 	span{
-		font-size: 28px;
+		font-size: 32px;
 	}
 	
 	li{
-		font-size: 20px;
+		font-size: 24px;
 		line-height: 50px;
 		height: 50px;
 	}
 	
 	img{
-		height: 700px;
+		height: 750px;
 	}
 	
 	.caption{
@@ -170,13 +166,136 @@
 	}
 	
 	.next{
-		height: 700px;
+		height: 750px;
 	}
 	
 }
+		
+@media only screen and (min-width: 750px) and (max-width: 1200px){
+
+	h1{
+		font-size: 32px;
+	}
+	
+	h2{
+		font-size: 20px;
+	}
+	
+	span{
+		font-size: 20px;
+	}
+	
+	
+	li{
+		font-size: 14px;
+		line-height: 20px;
+		height: 25px;
+	}
+	
+
+	
+	img{
+		height: 400px;
+	}
+	
+	.caption{
+		margin-top: 2%;
+		font-size: 14px;
+	}
+	
+	.next{
+		height: 400px;
+	}
+}
+		
+@media only screen and (min-width: 0px) and (max-width: 750px){
+	
+	.column1{
+			width: 100%;
+			min-height: 100%;
+			top: 0px;
+			bottom: 0px;
+			margin-top: 25px;
+			margin-left: 2.5%;
+			text-align: left;
+			position: absolute;
+		}
+	
+	h1{
+		font-size: 28px;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+		text-align: center;
+	}
+	
+	h2{
+		font-size: 20px;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+		text-align: center;
+
+	}
+	
+	span{
+		font-size: 22px;
+		line-height: 40px;
+		margin-top: 15px;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		
+	}
+
+	
+	ul{
+		margin-left: -30px;
+		display: block;
+		text-align: center;
+		margin-right: auto;
+	}
+	
+	li{
+		font-size: 16px;
+		line-height: 35px;
+		height: 35px;
+		text-align: center;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.content{
+			width: 95%;
+			margin-left: 2.5%;
+			margin-top: 650px;
+			display: inline-block;
+			
+		}
+	
+	img{
+		height: 200px;
+	}
+	
+	.caption{
+		margin-top: 20px;
+		margin-bottom: 200px;
+		font-size: 14px;
+	}
+	
+	.next{
+		height: 200px;
+		margin-top: 650px;
+	}
+}
+		
+
 	</style>
 <meta charset="UTF-8">
 <title>Arturo Velazquez</title>
+<meta name="viewport" content= "width=device-width, initial-scale=1.0">	
 </head>
 
 <body>
@@ -203,6 +322,10 @@
 			<span id="toggle2">Design</span>
 				<ul id="dropdown2">
 					<a href="typography2.html"><li>Typography Exercises</li></a>
+					<a href="processing_type.html"><li>Typography Experiment</li></a>
+					<a href="3d_type.html"><li>3D Typography Experiment</li></a>
+					<a href="daysoftype.html"><li>30 Days of Typography</li></a>
+					<a href="nytimesmovies.html"><li>API Information Organization</li></a>
 					<a href="icon.html"><li>Iconography Exercises</li></a>
 					<a href="principles.html"><li>Principles of Design Webpage</li></a>
 					<a href="nationalparks.html"><li>National Parks Webpage</li></a>
